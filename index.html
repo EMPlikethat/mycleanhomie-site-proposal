@@ -1,1 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyCleanHomie | Roof Softwashing, Gutter & Concrete Cleaning | Camas, WA</title>
+<meta name="description" content="Professional soft washing and pressure washing for roofs, gutters, siding, driveways, concrete and more. Licensed, bonded & insured. Serving Washington & Oregon since 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#29AB87;--green-dark:#1f8a6c;--blue:#197EFB;--blue-dark:#0e63d1;
+  --offwhite:#F8F9FA;--white:#FFFFFF;--text:#1A1A2E;--muted:#6C757D;--border:#E9ECEF;
+  --shadow:0 4px 20px rgba(0,0,0,0.08);--shadow-lg:0 12px 40px rgba(0,0,0,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:var(--text);background:var(--offwhite);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:14px 0}
+.header-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-icon{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--blue));display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.logo-text{font-weight:900;font-size:1.35rem;letter-spacing:-0.5px}
+.logo-text .clean{color:var(--green)}
+.logo-text .homie{color:var(--blue)}
+.header-cta{display:flex;gap:12px;align-items:center}
+.phone-link{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text);font-size:.95rem}
+.phone-link:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:all .2s;text-align:center;line-height:1.2}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(41,171,135,0.35)}
+.btn-outline{background:transparent;color:var(--text);border:2px solid var(--border)}
+.btn-outline:hover{border-color:var(--green);color:var(--green)}
+.btn-lg{padding:16px 32px;font-size:1.05rem}
+.hero{background:linear-gradient(135deg,#1A1A2E 0%,#0f2c4a 100%);color:#fff;padding:72px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(41,171,135,0.15),transparent 70%);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-40%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(25,126,251,0.12),transparent 70%);border-radius:50%}
+.hero-inner{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(41,171,135,0.15);border:1px solid rgba(41,171,135,0.4);padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:600;color:#7EE8C4;margin-bottom:24px}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:20px}
+.hero h1 .green{color:#4FD1AB}
+.hero h1 .blue{color:#6BA8FF}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);color:#c8d1de;max-width:720px;margin:0 auto 32px}
+.hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-trust{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:36px;font-size:.85rem;color:#9aa8bd}
+.hero-trust span{display:flex;align-items:center;gap:6px}
+.check{color:#4FD1AB;font-weight:900}
+.tool-band{background:linear-gradient(90deg,var(--green),var(--blue));padding:40px 0;color:#fff}
+.tool-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.tool-text h2{font-size:1.6rem;font-weight:900;margin-bottom:6px}
+.tool-text p{opacity:.95;font-size:.95rem}
+.tool-text .sub{font-size:.85rem;opacity:.85;margin-top:6px;display:block}
+.tool-btn{background:#fff;color:var(--green);font-weight:800;padding:16px 32px;border-radius:10px;white-space:nowrap;transition:all .2s;border:2px solid #fff;cursor:pointer}
+.tool-btn:hover{background:transparent;color:#fff}
+section{padding:72px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 52px}
+.section-eyebrow{display:inline-block;color:var(--green);font-weight:800;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.section-head h2{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-0.8px;margin-bottom:14px;color:var(--text)}
+.section-head p{color:var(--muted);font-size:1.05rem}
+#why-us{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.why-card{background:var(--offwhite);border:1px solid var(--border);border-radius:14px;padding:28px;transition:all .25s}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--green)}
+.why-icon{width:52px;height:52px;background:var(--green);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px;color:#fff}
+.why-card:nth-child(2) .why-icon{background:var(--blue)}
+.why-card:nth-child(3) .why-icon{background:var(--green)}
+.why-card:nth-child(4) .why-icon{background:var(--blue)}
+.why-card:nth-child(5) .why-icon{background:var(--green)}
+.why-card:nth-child(6) .why-icon{background:var(--blue)}
+.why-card h3{font-size:1.1rem;font-weight:800;margin-bottom:8px}
+.why-card p{color:var(--muted);font-size:.92rem}
+.why-card.featured{grid-column:span 2;background:linear-gradient(135deg,rgba(41,171,135,0.08),rgba(25,126,251,0.08));border:2px solid var(--green)}
+@media(max-width:600px){.why-card.featured{grid-column:span 1}}
+#services{background:var(--offwhite)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+.service-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);transition:all .25s;display:flex;flex-direction:column}
+.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.service-img{width:100%;height:180px;background:linear-gradient(135deg,var(--green),var(--blue));position:relative;display:flex;align-items:center;justify-content:center;color:#fff;font-size:3.5rem}
+.service-body{padding:28px;flex:1;display:flex;flex-direction:column}
+.service-body h3{font-size:1.3rem;font-weight:900;margin-bottom:6px;color:var(--text)}
+.service-tag{display:inline-block;background:rgba(25,126,251,0.1);color:var(--blue);font-weight:700;font-size:.72rem;padding:4px 12px;border-radius:50px;margin-bottom:14px;letter-spacing:.5px;text-transform:uppercase}
+.service-body p{color:var(--muted);font-size:.94rem;margin-bottom:16px}
+.service-process{background:var(--offwhite);border-left:3px solid var(--green);padding:14px 16px;border-radius:0 8px 8px 0;margin-bottom:16px}
+.service-process strong{display:block;font-size:.8rem;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.service-process ol{padding-left:18px;font-size:.85rem;color:var(--text)}
+.service-process li{margin-bottom:4px}
+.service-why{display:flex;gap:8px;align-items:flex-start;font-size:.85rem;color:var(--text);font-weight:600;padding-top:14px;border-top:1px dashed var(--border);margin-top:auto}
+.service-why::before{content:'✓';color:var(--green);font-weight:900;font-size:1rem}
+#gallery{background:var(--white)}
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
+.ba-card{background:var(--offwhite);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:all .25s}
+.ba-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.ba-imgs{display:grid;grid-template-columns:1fr 1fr;position:relative}
+.ba-label{position:absolute;top:10px;font-size:.7rem;font-weight:800;padding:4px 10px;border-radius:5px;letter-spacing:1px;text-transform:uppercase;z-index:2}
+.ba-label.before{left:10px;background:rgba(220,53,69,0.9);color:#fff}
+.ba-label.after{right:10px;background:rgba(41,171,135,0.95);color:#fff}
+.ba-caption{padding:18px 22px;font-weight:700;font-size:.95rem}
+.ba-caption small{display:block;color:var(--muted);font-weight:500;font-size:.8rem;margin-top:2px}
+.ba-placeholder{width:100%;height:200px;background:repeating-linear-gradient(45deg,#e9ecef,#e9ecef 10px,#f1f3f5 10px,#f1f3f5 20px);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;font-weight:600;text-align:center;padding:12px}
+.ba-placeholder span{font-size:1.8rem;margin-bottom:6px;opacity:.5}
+#reviews{background:linear-gradient(135deg,#1A1A2E,#0f2c4a);color:#fff}
+#reviews .section-head h2{color:#fff}
+#reviews .section-head p{color:#c8d1de}
+#reviews .section-eyebrow{color:#4FD1AB}
+.review-box{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:52px 32px;text-align:center;max-width:760px;margin:0 auto}
+.stars{font-size:2.4rem;letter-spacing:6px;color:#FFC107;margin-bottom:16px}
+.review-box h3{font-size:1.5rem;font-weight:900;margin-bottom:10px}
+.review-box p{color:#c8d1de;margin-bottom:28px;font-size:1rem}
+.review-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo-wrap">
+      <div class="logo-icon">🏠</div>
+      <span class="logo-text"><span class="clean">MyClean</span><span class="homie">Homie</span></span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:3608440794" class="phone-link">📞 (360) 844-0794</a>
+      <a href="#quote" class="btn btn-primary">Get Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-badge">🌿 Making Your Home Look Homie Again</div>
+    <h1>Soft Washing That's <span class="green">Gentle</span> on Your Home & <span class="blue">Tough</span> on Moss</h1>
+    <p>Professional soft washing and pressure washing for roofs, gutters, siding, driveways, concrete, and more. We remove dirt, grime, moss, and buildup to keep your property looking clean and at its best.</p>
+    <div class="hero-buttons">
+      <a href="#quote" class="btn btn-primary btn-lg">Get My Free Quote →</a>
+      <a href="tel:3608440794" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.3)">📞 Call (360) 844-0794</a>
+    </div>
+    <div class="hero-trust">
+      <span><span class="check">✓</span> Licensed, Bonded & Insured</span>
+      <span><span class="check">✓</span> 2-Year Clean Roof Guarantee</span>
+      <span><span class="check">✓</span> Serving WA & OR Since 2025</span>
+    </div>
+  </div>
+</section>
+
+<section class="tool-band">
+  <div class="container tool-inner">
+    <div class="tool-text">
+      <h2>⚡ Free Online Estimates — Get Your Quote Instantly, Right Now!</h2>
+      <p>Skip the waiting. Just enter your home address and our tool uses satellite imagery to take accurate measurements of your roof, driveway, square footage, linear feet, and more.</p>
+      <span class="sub">🔒 Spot-on results in seconds. No phone call required.</span>
+    </div>
+    <button class="tool-btn" onclick="alert('🛰️ Instant Quote Tool — Coming Soon!&#10;&#10;In the meantime, scroll down to request your free quote or call (360) 844-0794.')">Coming Soon →</button>
+  </div>
+</section>
+
+<section id="why-us">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Why Pick Us</span>
+      <h2>Why Homeowners Choose MyCleanHomie</h2>
+      <p>Locally owned, fully licensed, and obsessed with doing the job right the first time.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card featured">
+        <div class="why-icon">🛰️</div>
+        <h3>FREE ONLINE ESTIMATES — Get Your Quote Instantly, Right Now!</h3>
+        <p>Enter your address and our tool uses satellite imagery to take accurate measurements of your roof, driveway, square footage, linear feet, and more — delivering a spot-on quote in seconds.</p>
+      </div>
+      <div class="why-card"><div class="why-icon">🛡️</div><h3>Licensed, Bonded & Insured</h3><p>Fully covered so you're protected on every job. We keep you and your property safe.</p></div>
+      <div class="why-card"><div class="why-icon">⛑️</div><h3>Service Quality & Crew Safety First</h3><p>Our crew is always harnessed and tied off. Safety and quality go hand in hand.</p></div>
+      <div class="why-card"><div class="why-icon">🤝</div><h3>Straightforward Work</h3><p>No upsells, no surprises. Honest pricing and clear communication from start to finish.</p></div>
+      <div class="why-card"><div class="why-icon">🌿</div><h3>2-Year Clean Roof Guarantee</h3><p>Our EPA-approved treatment keeps moss from coming back as fast — backed by our guarantee.</p></div>
+      <div class="why-card"><div class="why-icon">📍</div><h3>Serving Beautiful WA & OR Since 2025</h3><p>Proudly serving Camas, Vancouver, Portland, and surrounding communities.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Our Services</span>
+      <h2>Professional Cleaning for Every Surface</h2>
+      <p>From mossy roofs to grimy driveways — we've got the tools, the training, and the guarantee to get it done right.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-img">🏠</div>
+        <div class="service-body">
+          <h3>Roof Cleaning & Moss Removal</h3>
+          <span class="service-tag">Soft Wash · No Pressure Damage</span>
+          <p>Our low-pressure roof soft washing safely removes moss, algae, and lichen — without damaging your shingles or tiles. EPA-approved treatment kills moss at the root and slows regrowth.</p>
+          <div class="service-process">
+            <strong>Our Process</strong>
+            <ol>
+              <li>Inspect roof & light sweep of moss and debris</li>
+              <li>Blow off surface with leaf blowers</li>
+              <li>Apply low-pressure liquid moss treatment (kills root systems — no rinse)</li>
+              <li>Clean up all fallen debris from around your home</li>
+              <li>Dead moss naturally flakes off over ~3 months</li>
+            </ol>
+          </div>
+          <div class="service-why">2-Year Clean Roof Guarantee · Safe for asphalt shingle, clay & concrete tile, metal, and slate</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img">🍂</div>
+        <div class="service-body">
+          <h3>Gutter Cleaning</h3>
+          <span class="service-tag">1st & 2nd Story Available</span>
+          <p>Complete gutter cleaning for first and second-story homes. We remove and bag all debris, then rinse your gutters thoroughly for a spotless clean — and flush your downspouts too.</p>
+          <div class="service-process">
+            <strong>Our Process</strong>
+            <ol>
+              <li>Crew harnessed and tied off for safety</li>
+              <li>Remove and bag all debris</li>
+              <li>Flush downspouts thoroughly</li>
+              <li>Rinse gutters for a clean finish</li>
+            </ol>
+          </div>
+          <div class="service-why">Safety-first crew · Full downspout flush · Spotless cleanup — we leave no mess behind</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img">🚗</div>
+        <div class="service-body">
+          <h3>Driveway & Entryway Cleaning</h3>
+          <span class="service-tag">Pressure Washing</span>
+          <p>Complete driveway and entryway wash that lifts years of grime, algae, and buildup. We pretreat every surface to ensure all organic growth is removed — for an even, stripe-free clean.</p>
+          <div class="service-process">
+            <strong>Our Process</strong>
+            <ol>
+              <li>Pretreat all concrete to kill organic growth</li>
+              <li>Surface clean for even results</li>
+              <li>Rinse off and let dry</li>
+              <li>Eco-friendly water runoff every time</li>
+            </ol>
+          </div>
+          <div class="service-why">Pretreatment ensures deeper clean · Even, stripe-free finish · Eco-friendly runoff</div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img">🧼</div>
+        <div class="service-body">
+          <h3>Soft Washing — House, Siding & More</h3>
+          <span class="service-tag">Safe for Delicate Surfaces</span>
+          <p>Our soft washing services aren't limited to roofs. We safely clean house siding, cedar & vinyl fences, porches, verandas, wood patios, decks, brick, stone, retaining walls, pavers, and more.</p>
+          <div class="service-process">
+            <strong>Our Process</strong>
+            <ol>
+              <li>Spray on soft wash formula</li>
+              <li>Let it sit and soak</li>
+              <li>Lightly rinse with lots of volume</li>
+              <li>Optional wood re-staining available</li>
+            </ol>
+          </div>
+          <div class="service-why">Softer & safer than pressure washing for wood, siding, roofs, and fences — no splintering, no etching, no damage</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Before & After</span>
+      <h2>See the MyCleanHomie Difference</h2>
+      <p>Real results from real customers across Washington and Oregon.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Driveway Pressure Washing<small>Vancouver, WA · Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Driveway Pressure Washing<small>Camas, WA · Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🚗</span>Driveway<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Driveway Pressure Washing<small>Portland, OR · Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🏡</span>Entryway<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🏡</span>Entryway<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Entryway Pressure Washing<small>Battle Ground, WA · Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🏠</span>Roof Cleaning<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🏠</span>Roof Cleaning<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Roof Soft Wash & Moss Removal<small>Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🍂</span>Gutter Cleaning<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🍂</span>Gutter Cleaning<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Gutter Cleaning<small>Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🧼</span>Soft Washing<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🧼</span>Soft Washing<br>After Photo</div>
+        </div>
+        <div class="ba-caption">Soft Washing — Fence / Siding<small>Photo coming soon</small></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-imgs">
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+          <div class="ba-placeholder"><span>🏡</span>House Siding<br>Before Photo</div>
+          <div class="ba-placeholder"><span>🏡</span>House Siding<br>After Photo</div>
+        </div>
+        <div class="ba-caption">House Siding Soft Wash<small>Photo coming soon</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Reviews</span>
+      <h2>What Your Neighbors Are Saying</h2>
+      <p>We're proud to serve homeowners across Washington & Oregon.</p>
+    </div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <h3>Loved by Homeowners in the PNW</h3>
+      <p>See why locals trust MyCleanHomie for their roof, gutter, driveway, and soft washing needs. Read real reviews from real customers on Google.</p>
+      <div class="review-buttons">
+        <a href="https://share.google/qzJfJp1kEehNLbCAw" target="_blank" rel="noopener" class="btn btn-primary btn-lg">⭐ Read Our Google Reviews</a>
+        <a href="https://share.google/qzJfJp1kEehNLbCAw" target="_blank" rel="noopener" class="btn btn-lg" style="background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.4)">Leave Us a Review</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="quote">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Get Started</span>
+      <h2>Request Your Free Quote</h2>
+      <p>Fill out the form below and we'll get back to you within 1 business day. For faster service, call <a href="tel:3608440794" style="color:var(--green);font-weight:700">(360) 844-0794</a>.</p>
+    </div>
+    <div class="form-wrap">
+      <form id="quoteForm">
+        <div class="form-row">
+          <div class="field">
+            <label>Name <span class="req">*</span></label>
+            <input type="text" name="name" required placeholder="John Smith">
+          </div>
+          <div class="field">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" required placeholder="(360) 555-1234">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email Address <span class="req">*</span></label>
+          <input type="email" name="email" required placeholder="you@email.com">
+        </div>
+
+        <div class="field">
+          <label>Property Address <span class="req">*</span></label>
+          <input type="text" name="address" required placeholder="Start typing your address..." autocomplete="street-address">
+        </div>
+
+        <div class="field">
+          <label>Service Needed <span class="req">*</span></label>
+          <select name="service" id="mainService" required>
+            <option value="">— Select a service —</option>
+            <option value="Roof Cleaning & Moss Removal">Roof Cleaning & Moss Removal</option>
+            <option value="1st Story Gutter Cleaning">1st Story Gutter Cleaning</option>
+            <option value="2nd Story & Over Gutter Cleaning">2nd Story & Over Gutter Cleaning</option>
+            <option value="Driveway & Entry Cleaning">Driveway & Entry Cleaning</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <div class="sub-field" id="otherSub">
+            <label>Please specify</label>
+            <select id="otherType">
+              <option value="">— Select —</option>
+              <option value="Soft Washing">Soft Washing</option>
+              <option value="Something Else">Something Else</option>
+            </select>
+          </div>
+
+          <div class="sub-field" id="softSub">
+            <label>Soft Washing Surface</label>
+            <select id="softSurface">
+              <option value="">— Select a surface —</option>
+              <option value="Complete House Siding">Complete House Siding</option>
+              <option value="Complete Shed">Complete Shed</option>
+              <option value="Porch">Porch</option>
+              <option value="Veranda">Veranda</option>
+              <option value="Deck">Deck</option>
+              <option value="Cedar Fence">Cedar Fence</option>
+              <option value="Retaining Walls">Retaining Walls</option>
+              <option value="Other (Soft Wash)">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Additional Notes & Requests</label>
+          <textarea name="notes" placeholder="Tell us anything else about your project — access, pets, preferred timing, or anything else we should know."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Get My Free Quote →</button>
+        <p class="form-note">🔒 Your information is safe with us. We'll never share your details.</p>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        ✅ Thanks <span id="successName"></span>! Your quote request has been submitted.<br>
+        We'll reach out within 1 business day.<br><br>
+        Need it faster? Call us at <a href="tel:3608440794" style="color:var(--green-dark);font-weight:800">(360) 844-0794</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-icon">🏠</div>
+        <h4>MyCleanHomie</h4>
+        <p>Professional soft washing and pressure washing for roofs, gutters, siding, driveways, concrete, and more. Making your home look Homie again since 2025.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Roof Cleaning & Moss Removal</a></li>
+          <li><a href="#services">Gutter Cleaning</a></li>
+          <li><a href="#services">Driveway & Entry Cleaning</a></li>
+          <li><a href="#services">Soft Washing</a></li>
+          <li><a href="#services">House & Siding Washing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <ul>
+          <li>Camas, WA</li>
+          <li>Vancouver, WA</li>
+          <li>Washougal, WA</li>
+          <li>Brush Prairie, WA</li>
+          <li>Ridgefield, WA</li>
+          <li>Battle Ground, WA</li>
+          <li>Portland, OR</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>📞 <a href="tel:3608440794">(360) 844-0794</a></li>
+          <li>✉️ <a href="mailto:mycleanhomie@gmail.com">mycleanhomie@gmail.com</a></li>
+          <li>🌐 mycleanhomie.com</li>
+          <li style="margin-top:12px;color:#7c8ba1">Mon–Fri: 8AM–5PM<br>Sat: 10AM–4PM<br>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MyCleanHomie. All rights reserved. Licensed, Bonded & Insured.</span>
+      <span>We accept: Visa · Mastercard · Venmo · Check · Cash</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:3608440794" class="btn btn-outline">📞 Call</a>
+  <a href="#quote" class="btn btn-primary">Get Free Quote</a>
+</div>
+
+<script>
+const mainService = document.getElementById('mainService');
+const otherSub = document.getElementById('otherSub');
+const otherType = document.getElementById('otherType');
+const softSub = document.getElementById('softSub');
+const softSurface = document.getElementById('softSurface');
+
+mainService.addEventListener('change', () => {
+  if (mainService.value === 'Other') {
+    otherSub.classList.add('active');
+  } else {
+    otherSub.classList.remove('active');
+    softSub.classList.remove('active');
+    otherType.value = '';
+    softSurface.value = '';
+  }
+});
+
+otherType.addEventListener('change', () => {
+  if (otherType.value === 'Soft Washing') {
+    softSub.classList.add('active');
+  } else {
+    softSub.classList.remove('active');
+    softSurface.value = '';
+  }
+});
+
+const form = document.getElementById('quoteForm');
+const formSuccess = document.getElementById('formSuccess');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = form.name.value;
+  document.getElementById('successName').textContent = name.split(' ')[0] || 'there';
+  form.style.display = 'none';
+  formSuccess.classList.add('show');
+  formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
